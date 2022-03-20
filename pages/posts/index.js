@@ -1,6 +1,4 @@
-import { Fragment } from "react";
-import Hero from "../components/home-page/hero";
-import FeaturedPosts from "../components/home-page/featured-posts";
+import AllPosts from "../../components/posts/all-posts";
 const DUMMY_POSTS = [
   {
     slug: "getting-started-with-nextjs",
@@ -39,15 +37,7 @@ const DUMMY_POSTS = [
     date: "2022-02-10",
   },
 ];
-function HomePage() {
-  return (
-    <Fragment>
-      <Hero />
-      <FeaturedPosts posts={DUMMY_POSTS} />
-    </Fragment>
-  );
+function AllPostsPage() {
+  return <AllPosts posts={DUMMY_POSTS} />;
 }
-export default HomePage;
-
-// 1 Hero Section => present ourselves
-// 2 Featured Posts
+export default AllPostsPage;
